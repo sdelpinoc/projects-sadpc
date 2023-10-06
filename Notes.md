@@ -7,3 +7,5 @@
 ## Eslint/Linter
 
 - `npx eslint --init` or `npm init @eslint/config`
+
+## Deploy
