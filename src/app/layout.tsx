@@ -41,7 +41,7 @@ export default function RootLayout ({
             <ul className='flex justify-center gap-4'>
               {
                 links.map(({ link, label, isExternal }) => (
-                  <li key={label}>
+                  <li key={label} className='hover:scale-110 transition-transform'>
                     <Link href={link} target={(isExternal === true) ? '_blank' : '_self'}>{label}</Link>
                   </li>
                 ))
