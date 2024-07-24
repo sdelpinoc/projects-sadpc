@@ -9,7 +9,7 @@ interface Props {
   url: string
 }
 
-export const CardProject = ({ name, description, technologies, url, github }: Props) => {
+export const Card = ({ name, description, technologies, url, github }: Props) => {
   return (
     <article className="flex flex-col w-full md:w-2/5 rounded-lg shadow-md pb-4 bg-slate-100 dark:bg-slate-600">
       <p className="text-2xl bg-cascade-800 rounded-t-lg p-2 text-center text-white dark:bg-cascade-900">{name}</p>
@@ -21,7 +21,7 @@ export const CardProject = ({ name, description, technologies, url, github }: Pr
             {
               technologies.map((technology, index) => {
                 return (
-                  <div key={`${name}${index}`} className=" dark:bg-slate-400 p-2 rounded">
+                  <div key={`${name}${index}`} className=" dark:bg-slate-100 p-2 rounded">
                     {technology}
                   </div>
                 )
